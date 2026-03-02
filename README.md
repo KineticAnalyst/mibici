@@ -16,7 +16,7 @@ Les données brutes sont accessibles sur le portail MiBici Datos Abiertos. Pour 
 
 data/  
 └── [YYYY]/  
-    └── datos_abiertos_[YYYY]_[MM].csv
+      └── datos_abiertos_[YYYY]_[MM].csv
 
 Contrairement aux données de trajets (trop volumineuses), le référentiel des stations enrichi est inclus dans ce dépôt (/data/nomenclatura_2025_11.csv).  
 **Source initiale** : Nomenclature officielle MiBici (Version Nov. 2025).  
@@ -62,5 +62,6 @@ L'analyse a identifié des **"Puits"** (stations qui saturent) et des **"Sources
 * **Découverte** : 12,7% de ce flux provient d'un unique cluster résidentiel (Stations 194-199). C'est un "entonnoir logistique" qui nécessite des mesures de régulation spécifiques.
 
 ---
+
 
 
