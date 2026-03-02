@@ -15,14 +15,14 @@ L'objectif est double : démontrer une capacité d'ingénierie de données sur d
 Les données brutes sont accessibles sur le portail MiBici Datos Abiertos. Pour assurer le bon fonctionnement des notebooks, les fichiers CSV doivent être organisés selon la structure suivante :
 
 data/
-└── [YYYY]/
+└── [YYYY]/  
     └── datos_abiertos_[YYYY]_[MM].csv
 
-Contrairement aux données de trajets (trop volumineuses), le référentiel des stations enrichi est inclus dans ce dépôt (/data/nomenclatura_2025_11.csv).
-**Source initiale** : Nomenclature officielle MiBici (Version Nov. 2025).
-**Data Enrichment** : Le fichier source présentait des lacunes critiques (coordonnées GPS manquantes pour les stations récentes).
-**Traitement** : Géocodage manuel via Google Maps pour garantir une couverture à 100% des stations actives au 31/12/2025.
-**Usage** : Ce fichier sert de table de jointure unique pour toutes les analyses spatiales et la cartographie du réseau.
+Contrairement aux données de trajets (trop volumineuses), le référentiel des stations enrichi est inclus dans ce dépôt (/data/nomenclatura_2025_11.csv).  
+**Source initiale** : Nomenclature officielle MiBici (Version Nov. 2025).  
+**Data Enrichment** : Le fichier source présentait des lacunes critiques (coordonnées GPS manquantes pour les stations récentes).  
+**Traitement** : Géocodage manuel via Google Maps pour garantir une couverture à 100% des stations actives au 31/12/2025.  
+**Usage** : Ce fichier sert de table de jointure unique pour toutes les analyses spatiales et la cartographie du réseau.  
 
 ## 📊 Le Projet en Chiffres Clés
 * **Volume** : 34 437 707 trajets traités.
@@ -62,3 +62,4 @@ L'analyse a identifié des **"Puits"** (stations qui saturent) et des **"Sources
 * **Découverte** : 12,7% de ce flux provient d'un unique cluster résidentiel (Stations 194-199). C'est un "entonnoir logistique" qui nécessite des mesures de régulation spécifiques.
 
 ---
+
