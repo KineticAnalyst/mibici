@@ -12,7 +12,7 @@ L'objectif est double : démontrer une capacité d'ingénierie de données sur d
 
 ---
 ## Source de données
-Les données brutes sont accessibles sur le portail MiBici Datos Abiertos. Pour assurer le bon fonctionnement des notebooks, les fichiers CSV doivent être organisés selon la structure suivante :
+Les données brutes sont accessibles sur le portail [MiBici Datos Abiertos](https://www.mibici.net/es/datos-abiertos/). Pour assurer le bon fonctionnement des notebooks, les fichiers CSV doivent être organisés selon la structure suivante :
 
 ```text
 data/
@@ -65,6 +65,7 @@ L'analyse a identifié des **"Puits"** (stations qui saturent) et des **"Sources
 * **Découverte** : 12,7% de ce flux provient d'un unique cluster résidentiel (Stations 194-199). C'est un "entonnoir logistique" qui nécessite des mesures de régulation spécifiques.
 
 ---
+
 
 
 
