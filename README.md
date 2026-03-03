@@ -20,8 +20,9 @@ data/
     ├── datos_abiertos_[YYYY]_01.csv
     ├── datos_abiertos_[YYYY]_02.csv
     └── ...
+```
 
-Contrairement aux données de trajets (trop volumineuses), le référentiel des stations enrichi est inclus dans ce dépôt (/data/nomenclatura_2025_11.csv).  
+Contrairement aux données de trajets (trop volumineuses), le référentiel des stations enrichi est inclus dans ce dépôt : [nomenclature](/data/nomenclatura_2025_11.csv).  
 **Source initiale** : Nomenclature officielle MiBici (Version Nov. 2025).  
 **Data Enrichment** : Le fichier source présentait des lacunes critiques (coordonnées GPS manquantes pour les stations récentes).  
 **Traitement** : Géocodage manuel via Google Maps pour garantir une couverture à 100% des stations actives au 31/12/2025.  
@@ -51,22 +52,23 @@ Traiter 34 millions de lignes sur une machine locale a nécessité une approche 
 Après l'impact du COVID-19 (-38% de volume), le service a retrouvé sa croissance jusqu'en 2024. **L'année 2025 marque un tournant** : baisse du volume (-1,9%) et de l'acquisition (-2,4%) alors que la durée des trajets stagne.
 > **Diagnostic** : Le réseau a atteint un plafond de verre infrastructurel. La priorité n'est plus l'acquisition client, mais la capacité des stations.
 
+![Volume annuel de trajets](images/evolution_annuelle_volume_trajets.png)
+
 ### 2. Usage Pendulaire & Climat
 Le service chute de **40% le week-end**, confirmant son usage utilitaire (domicile-travail).
 Un phénomène saisonnier unique a été identifié : **"L'énigme du printemps"**. Durant les mois les plus chauds et arides (avril-mai), l'usage diurne chute au profit d'un report après 20h pour éviter la chaleur.
 
+![Saisonnalité horaire](images/impact_saisonnalite_horaires.png)
+
 ### 3. Sociologie des Usagers
 * **Genre** : Forte prédominance masculine (73%). Les femmes (27%) décrochent significativement après 20h, soulignant un enjeu de sécurité urbaine. 
 * **Fidélité** : 80% de rétention à 1 mois. Le service convertit massivement les essayeurs en cyclistes réguliers.
+
+![Répartition genre](images/repartition_genre.png)
 
 ### 4. Goulots d'Étranglement Logistiques
 L'analyse a identifié des **"Puits"** (stations qui saturent) et des **"Sources"** (stations qui se vident).
 * **Cas critique** : À 18h, la Station 51 sature (+28 vélos/heure).
 * **Découverte** : 12,7% de ce flux provient d'un unique cluster résidentiel (Stations 194-199). C'est un "entonnoir logistique" qui nécessite des mesures de régulation spécifiques.
 
----
-
-
-
-
-
+![Déséquilibre horaire des flux des station 51 et 194](images/desequilibre_horaire_station_51_194.png)
